@@ -72,10 +72,11 @@ h2{
 .alert p{
     font-size: 14px;
     font-style: italic;
-    color: dimgray;
+    color: rgb(108, 106, 106);
     margin: 5px 0;
     padding: 10px;
 }
+ 
 
 .alert a{
     text-decoration: none;
@@ -101,11 +102,11 @@ h2{
     color: #fff;
     border: none;
     border-radius: 5px;
-    background-image: linear-gradient(to right,#aa076b,#61045f);
+    background-image: linear-gradient(to right,#078faa,#100461);
 }
 
 .button-container button:hover{
-    background-image: linear-gradient(to right,#61045f, #aa076b);
+    background-image: linear-gradient(to right,#100461, #078faa);
     cursor: pointer;
 }
 
