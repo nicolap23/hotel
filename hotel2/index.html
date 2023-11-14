@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Hotel buena ventura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+<body>
+    <header class="header" id="menu">
+        <div class="container">
+          <nav>
+            <a href="#" class="logo"> <img src="images/estrella.png" alt=""> </a>
+    
+            <ul class="nav-menu">
+              <li> <a href="#home" class="nav-link">Home</a> </li>
+              <li> <a href="#about" class="nav-link">Acerca</a> </li>
+              <li> <a href="#rooms" class="nav-link">Habitaciones</a> </li>
+              <li> <a href="#restaurant" class="nav-link">Restaurant</a> </li>
+              <li> <a href="#gallery" class="nav-link">Galleria</a> </li>
+              <li> <a href="#contact" class="nav-link">Contacto</a> </li>
+            </ul>
+    
+            <div class="hambuger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </header> 
+      <script>
+
+        const hambuger = document.querySelector('.hambuger');
+        const navMenu = document.querySelector('.nav-menu');
+    
+        hambuger.addEventListener("click", mobileMenu);
+    
+        function mobileMenu() {
+          hambuger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+    
+        const navLink = document.querySelectorAll('.nav-link');
+        navLink.forEach((n) => n.addEventListener("click", closeMenu));
+    
+        function closeMenu() {
+          hambuger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+      </script>
+
+      <section class="Home" id="home">
+        <div class="head_container">
+          <div class="box">
+            <div class="text">
+              <h1>Bienvenidos</h1>
+              <p>Nos enorgullece ofrecer a nuestros huéspedes una experiencia de alojamiento única y excepcional. Estamos dedicados a brindar comodidad, hospitalidad y una gama de servicios diseñados para que tu estancia sea inolvidable.</p>
+              
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/imagez7.jpg" alt="" class="slide">
+
+          </div>
+          <div class="image-item">
+            <img src="images/imagez7.jpg" alt="" class="slide active" onclick="img('images/imagez7.jpg' )">
+            <img src="images/imagez8.jpg" alt="" class="slide " onclick= "img('images/imagez8.jpg') " >
+            <img src="images/imagez10.jpg" alt="" class="slide  " onclick= "img('images/imagez10.jpg')">
+            <img src="images/imagez9.jpg" alt="" class="slide  " onclick= "img('images/imagez9.jpg')">
+          </div>
+        </div>
+
+      </section>
+
+      <script>
+        function img(anything) {
+          document.querySelector('.slide').src = anything;
+        }
+        function change (change){
+          const line = document.querySelector('.image')
+          line.style.background = change
+        }
+      </script>
+
+
+      <section class="book">
+       <div class="container flex">
+        <div class="input grid">
+          <div class="box">
+            <label>Ver</label>
+            <input type="date" placeholder="fecha-de-entrada">
+          </div>
+          <div class="box">
+            <label>Ver</label>
+            <input type="date" placeholder="fecha-de-salida">
+          </div>
+          <div class="box">
+            <label>Adultos</label><br>
+            <input type="number" placeholder="0">
+          </div>
+          <div class="box">
+            <label>Niños</label><br>
+            <input type="number" placeholder="0">
+          </div>
+        </div>
+        
+        <div class="search">
+          
+          <a href="rooms.html"><input type="submit" value="BUSCAR" ></a>
+        </div>
+        
+        </div>
+
+      </section>
+
+
+
+
+
+      <section class="about top" id="about">
+
+        <div class="container flex">
+          <div class="left">
+            <div class="img">
+              <img src="images/imagez11.jpg" alt="" class="image1">
+              <img src="images/imagez12.jpg" alt="" class="image2">
+            </div>
+          </div>
+          <div class="right">
+            <div class="heading">
+              <input  id="check" type="checkbox">
+              <h5>TU HOGAR LEJOS DE CASA!</h5>
+              <H2>Experiencia hotel buena ventura</H2>
+              <p>Nuestro compromiso principal es tu comodidad y satisfacción. Nuestro atento personal está siempre a tu disposición, listo para atender tus necesidades y hacer que te sientas como en casa.</p>
+              <p>Nuestra ubicación estratégica te brinda la oportunidad de explorar los encantos de nuestra ciudad de santiago o simplemente relajarte en las instalaciones de nuestro hotel. </p>
+              <div class="content2">
+                <p>Espacios para reuniones y eventos, ideales para conferencias y celebraciones para toda la familia</p>
+                  <p>Conexión Wi-Fi de alta velocidad en todo el hotel, Personal amable y atento disponible las 24 horas para satisfacer las necesidades de los huéspedes.</p>
+                <label class="show" for="check" >VER MENOS</label>
+              </div>
+              <label class="show" for="check" >APRENDE MAS</label>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="wrapper top">
+        <div class="container">
+          <div class="text">
+            <h2>ACTIVIDADES</h2>
+            <p> Disfruta de la piscina, el gimnasio, eventos y mucho mas.</p>
+            <div class="content">
+              <div class="box flex">
+                <i class="fas fa-swimming-pool"></i>
+                <span>Piscina</span>
+              </div>
+
+              <div class="box flex">
+                <i class="fas fa-dumbbell"></i>
+                <span>Gimnasio</span>
+              </div>
+
+              <div class="box flex">
+                <i class="fas fa-portrait"></i>
+                <span>Eventos y conferencias</span>
+              </div>
+
+              <div class="box flex">
+                <i class=" fas fa-hamburger"></i>
+                <span>Restaurante y Bar</span>
+              </div>
+
+              <div class="box flex">
+                <i class="fas fa-walking"></i>
+                <span>Visitas guiadas</span>
+              </div>
+
+              <div class="box flex">
+                <i class="fas fa-dice"></i>
+                <span>Sala de juegos</span>
+              </div>
+
+              <div class="box flex">
+                <i class="fas fa-cocktail"></i>
+                <span>Bar</span>
+              </div>
+
+
+              
+
+             
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="room top" id="rooms">
+        <div class="container">
+          <div class="heading-top flex1">
+            <div class="heading">
+              <h5>ESTANCIA</h5>
+              <H2>Habitaciones / Suits</H2>
+            </div>
+            <div class="button">
+              <a href="rooms.html">
+              <button class="btn1">VER TODO</button>
+            </a>
+            </div>
+          </div>
+          <div class="content grid">
+            <div class="box">
+              <div class="img">
+                <img src="images/IMAGEZ1.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>Habitacion verano</h3>
+                <p> <span>$</span>65.000 <span>Por noche</span> </p>
+              </div>
+            </div>
+              <div class="box">
+                <div class="img">
+                  <img src="images/image3.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Habitacion estandar</h3>
+                  <p> <span>$</span>85.000 <span>Por noche</span> </p>
+                </div>
+              </div>
+                <div class="box">
+                  <div class="img">
+                    <img src="images/image2.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h3>Habitacion deluxe</h3>
+                    <p> <span>$</span>115.000 <span>Por noche</span> </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper wrapper2">
+          <div class="container">
+            <div class="text">
+              <div class="heading">
+                <h5>RESEÑAS</h5>
+                <h2>INCREIBLE EXPERIENCIA</h2>
+              </div>
+              <div class="para">
+                <p>Me encantó mi estancia en este hotel. El personal fue amable y atento en todo momento, la habitación estaba impecable y cómoda, y la comida en el restaurante era deliciosa. Sin duda, volveré. </p>
+                <div class="box flex">
+                  <div class="img">
+                    <img src="images/PERFIL1.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <h5>MONICA PEREZ</h5>
+                    <h5>Santiago</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="restaurant top" id="restaurant">
+        <div class="container flex">
+          <div class="left">
+            <img src="images/chefs.jpg" alt="">
+          </div>
+          <div class="right">
+            <div class="text">
+              <h2>Nuestros restaurante</h2>
+              <p> Entendemos que la comida es una parte esencial de una estancia memorable. Nos enorgullece ofrecer a nuestros huéspedes una experiencia culinaria excepcional que refleja nuestro compromiso con la calidad, la creatividad y la satisfacción del paladar.</p>
+            </div>
+            <div class="accordionWrapper">
+              <div class="accordionItem open">
+                <h2 class="accordionIheading">Cocina italiana</h2>
+                <div class="accordionItemcontent">
+                  <p> La comida italiana es conocida en todo el mundo por su deliciosa combinación de sabores, ingredientes frescos y tradición culinaria.</p>
+                </div>
+              </div>
+              <div class="accordionItem close">
+                <h2 class="accordionIheading">Cocina peruana</h2>
+                <div class="accordionItemcontent">
+                  <p>La comida peruana es una de las joyas culinarias del mundo y ha ganado reconocimiento y admiración a nivel global por su diversidad de sabores, ingredientes únicos y fusiones culturales.</p>
+                </div>
+              </div>
+
+              <div class="accordionItem close">
+                <h2 class="accordionIheading">Cocina chilena</h2>
+                <div class="accordionItemcontent">
+                  <p> La comida chilena es una fusión de ingredientes autóctonos y técnicas culinarias traídas por los colonizadores españoles, y es un reflejo de la historia y la diversidad del país.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        var accItem = document.getElementsByClassName('accordionItem')
+        var accHD = document.getElementsByClassName('accordionIheading')
+
+        for (i = 0; i < accHD.length; i++) {
+        accHD[i].addEventListener('click', toggleItem, false);
+        }
+
+        function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+        }
+        if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+          }
+        }
+      </script>
+
+
+
+
+      <section class="gallary top" id="gallery">
+        <div class="container">
+          <div class="heading_top flex1">
+            <div class="heading">
+              <h5>BIENVENIDO A NUESTRA GALLERIA</h5>
+              <H2>Galleria del hotel</H2>
+            </div>
+
+          <div class="button">
+            <a href="gallary.html">
+                <button class="btn1">VER GALLERIA</button>
+              </a>
+              
+              
+          </div>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="images/imagez6.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="images/imagenz3.jpg" alt="">
+            </div>
+           <div class="item">
+              <img src="images/imgez4.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="images/imagez5.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="images/imagenz2.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+      <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1000: {
+            items: 4
+          }
+        }
+      })
+    </script>
+
+
+    <section class="map top" id="contact">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d699.9697006370789!2d-70.59613841962889!3d-33.43273845730774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf0b6b929363%3A0x24ddab83ed5f293f!2sAv.%20Hernando%20de%20Aguirre%201660%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1697667884680!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+
+    <footer>
+      <div class="container grid top">
+        <div class="box">
+         
+          
+          <p>Medios de pago</p>
+          <div class="payment grid">
+         
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          
+          </div>
+        </div>
+
+        <div class="box">
+          
+          <h3>Contáctenos</h3>
+
+        <ul>
+          <li>Av.POCURO, Av. Hernando de Aguirre 1660</li>
+          <li><i class="far fa-envelope"></i>Hotel.buenaventura@gmail.com</li>
+          <li><i class="far fa-phone-alt"></i>+56 9 2345 7896</li>
+          <li>Terminos y Condiciones</li>
+        </ul>
+        </div>
+
+      </div>
+    </footer>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
