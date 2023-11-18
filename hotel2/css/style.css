@@ -600,8 +600,25 @@ header {
   box-shadow: 0 13px 43px 0 rgb(37 46 89 / 10%);
 }
 
+.btnres{
+  
+  cursor: pointer;
+  padding:3px 3px;
+  display: inline-flex;
+  background: #C1B086;
+  color: white;
+  margin: 20px 0 50px 435px;
+  margin-bottom: auto;
+  border-radius: 20px;
+  font-size: 13px;
+  
+
+}
+
+
 
 /*--------------restaurant--------*/
+
 
 
 
