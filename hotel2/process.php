@@ -15,9 +15,18 @@ if($conn->connect_error){
 	$stmt->bind_param("sssi", $name, $rut,  $email, $phone);
 	$execval = $stmt->execute();
 	echo $execval;
-	echo "Registration successfully...";
+	
 	$stmt->close();
 	$conn->close();
 }
 ?>
+
+<?php
+if (isset ($_POST["name"]))
+{
+    header ('location:payment.html');
+}
 ?>
+<?
+
+
