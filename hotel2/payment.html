@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- custom css file link  -->
+    
     <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
 
 </head>
 <body>
 
 <div class="container">
 
-    <form action="">
+    <form action="process2.php" method="post">
 
         <div class="row">
 
@@ -28,37 +29,42 @@
                 </div>
                 <div class="inputBox">
                     <span>Nombre de la tarjeta :</span>
-                    <input type="text" placeholder="ingresar nombre correcto" required>
+                    <input type="text" placeholder="ingresar nombre correcto"  id="namet" name="namet" required>
                 </div>
                 <div class="inputBox">
                     <span>Numero de credito :</span>
-                    <input type="number" placeholder="1111-2222-3333-4444" required>
+                    <input type="number" placeholder="1111-2222-3333-4444" id="numbercredit" name="numbercredit" required>
                 </div>
                 <div class="inputBox">
                     <span>exp mes :</span>
-                    <input type="number" placeholder="ingresar mes" required>
+                    <input type="number" placeholder="ingresar mes" id="month" name="month" required>
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
                         <span>exp año :</span>
-                        <input type="number" placeholder="ingresar año" required>
+                        <input type="number" placeholder="ingresar año" id="year" name="year" required>
                     </div>
                     <div class="inputBox">
                         <span>CVV :</span>
-                        <input type="text" placeholder="1234" required>
+                        <input type="text" placeholder="1234" id="cvv" name="cvv" required>
                     </div>
                 </div>
 
             </div>
     
         </div>
-
-        <input type="submit" value="PAGAR" class="submit-btn">
-
+       
+            <input type="submit" value="PAGAR" class="submit-btn">
+           
+           
     </form>
 
-</div>    
-    
+
+</div>
+
+        
+
+   
 </body>
 </html>

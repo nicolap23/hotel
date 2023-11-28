@@ -27,6 +27,12 @@ if (isset ($_POST["name"]))
     header ('location:payment.html');
 }
 ?>
+
+
+
+
 <?
+
+
 
 

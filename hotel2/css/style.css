@@ -613,17 +613,19 @@ header {
 }
 
 .btnres{
-  
-  cursor: pointer;
-  padding:3px 3px;
-  display: inline-flex;
-  background: #C1B086;
-  color: white;
-  margin: 20px 0 50px 435px;
-  margin-bottom: auto;
-  border-radius: 20px;
-  font-size: 13px;
-  
+  padding: 5px 10px;
+    background: none;
+    outline: none;
+    border-radius: 50px;
+    margin-top: 20px;
+   
+    display: inline-block;
+    cursor: pointer;
+    background: #C1B086;
+    color: white;
+    margin: 50px 0 20px 50px;
+    margin-left: 70%;
+    border-radius: 50px;
 
 }
 
